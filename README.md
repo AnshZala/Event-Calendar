@@ -56,8 +56,8 @@ A modern, intuitive calendar application built with React that helps users manag
 ### Calendar View
 ![Calendar View](./public/screenshots/Screenshot1.png)
 
-### Event Creation Form
-![Event Creation](./public/screenshots/Screenshot2.png)
+### Drag and Drop Feature
+![Drag and Drop](./public/screenshots/Screenshot2.png)
 
 ### List of Events
 ![Event List](./public/screenshots/Screenshot3.png)
