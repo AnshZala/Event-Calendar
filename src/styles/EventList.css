@@ -1,0 +1,125 @@
+.event-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.event-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.event-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.event-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.event-list::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.event-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    animation: slideIn 0.3s ease-out;
+}
+
+.event-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+}
+
+.event-item.work {
+    border-left: 4px solid var(--work-color);
+}
+
+.event-item.personal {
+    border-left: 4px solid var(--personal-color);
+}
+
+.event-item.other {
+    border-left: 4px solid var(--other-color);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.event-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.event-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.event-actions button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    color: var(--primary-color);
+    background: rgba(74, 144, 226, 0.1);
+}
+
+.delete-btn:hover {
+    color: var(--danger-color);
+    background: rgba(231, 76, 60, 0.1);
+}
+
+.event-time {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-description {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.toggle-description {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    padding: 0;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.toggle-description:hover {
+    text-decoration: underline;
+}
+
+.no-events {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    background: var(--secondary-color);
+    border-radius: 10px;
+    font-style: italic;
+}

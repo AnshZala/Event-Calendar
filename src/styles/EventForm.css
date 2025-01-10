@@ -1,0 +1,127 @@
+.event-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    animation: slideIn 0.3s ease-out;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: white;
+}
+
+.event-form input:focus,
+.event-form textarea:focus,
+.event-form select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.event-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.time-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.category-select {
+    margin-bottom: 1.2rem;
+}
+
+.category-select select {
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.category-select select option {
+    padding: 12px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.error {
+    border-color: var(--danger-color) !important;
+}
+
+.error-message {
+    color: var(--danger-color);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+/* Category Colors */
+select[value="work"] {
+    border-left: 4px solid var(--work-color);
+}
+
+select[value="personal"] {
+    border-left: 4px solid var(--personal-color);
+}
+
+select[value="other"] {
+    border-left: 4px solid var(--other-color);
+}
+
+/* Animation */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.error {
+    animation: shake 0.3s ease-in-out;
+}
