@@ -2,6 +2,8 @@
 
 A modern, intuitive calendar application built with React that helps users manage their daily events and schedules efficiently.
 
+[View the Hosted Website](https://event-calendar-ten.vercel.app/)
+
 ## Features
 
 - Create, edit and delete events
@@ -28,7 +30,7 @@ A modern, intuitive calendar application built with React that helps users manag
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/calendar-app.git
+   git clone https://github.com/AnshZala/Event-Calendar.git
    ```
 2. Navigate to project directory:
    ```bash
